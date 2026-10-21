@@ -56,7 +56,7 @@ document.getElementById("signup").addEventListener(
       email,
       password,
       options: {
-        emailRedirectTo: window.location.origin + "/index.html"
+        emailRedirectTo: window.location.origin + "/mail.html"
       }
     });
 
