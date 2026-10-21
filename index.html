@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メール認証</title>
+</head>
+<body>
+  <h1>アカウント登録・ログイン</h1>
+
+  <form id="auth-form">
+    <label for="email">メールアドレス</label>
+    <input id="email" type="email" required>
+
+    <br><br>
+
+    <label for="password">パスワード（6文字以上）</label>
+    <input id="password" type="password" minlength="6" required>
+
+    <br><br>
+
+    <button type="button" id="signup">新規登録</button>
+    <button type="submit">ログイン</button>
+  </form>
+
+  <p id="message" role="status">メールアドレスを入力してください。</p>
+
+  <section id="account" hidden>
+    <h2>ログイン中</h2>
+    <p id="user-email"></p>
+    <button id="logout" type="button">ログアウト</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="mail.js"></script>
+</body>
+</html>
