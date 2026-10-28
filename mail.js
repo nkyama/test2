@@ -107,7 +107,8 @@ document.getElementById("logout").addEventListener(
     }
 
     showMessage("ログアウトしました。");
-    await updateScreen();
+    // トップページへ移動
+    window.location.href = "index.html";
   }
 );
 
